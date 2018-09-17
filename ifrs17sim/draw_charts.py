@@ -57,6 +57,9 @@ def draw_actest_pairs(outer, inner, items, act_len, t_max):
     ncols = len(items)
     nrows = act_len
 
+    if ncols == 1:
+        return draw_actest(outer, inner, items[0], act_len, t_max)
+
     _, axs = plt.subplots(nrows=nrows, ncols=ncols, sharex=True)
 
     for col, item in enumerate(items):
