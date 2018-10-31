@@ -5,6 +5,7 @@ This module defines cells that take present values of projected items
 in :mod:`projection <simplelife.projection>` module.
 """
 
+
 def PV_SumInsurIF(t):
     """Present value of insurance in-force"""
     if t > last_t:
